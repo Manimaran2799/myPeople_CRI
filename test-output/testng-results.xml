@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-14T20:18:25 IST" name="Suite" finished-at="2025-05-14T20:18:39 IST" duration-ms="13552">
+    <groups>
+    </groups>
+    <test started-at="2025-05-14T20:18:25 IST" name="Test" finished-at="2025-05-14T20:18:39 IST" duration-ms="13552">
+      <class name="Test_demo.Demo_class">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_demo.Demo_class@183ec003]" started-at="2025-05-14T20:18:25 IST" name="setup" finished-at="2025-05-14T20:18:29 IST" duration-ms="3804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="browser()[pri:0, instance:Test_demo.Demo_class@183ec003]" started-at="2025-05-14T20:18:29 IST" name="browser" finished-at="2025-05-14T20:18:37 IST" duration-ms="8203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method signature="checkURL()[pri:0, instance:Test_demo.Demo_class@183ec003]" started-at="2025-05-14T20:18:37 IST" name="checkURL" finished-at="2025-05-14T20:18:37 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkURL -->
+        <test-method signature="getText()[pri:0, instance:Test_demo.Demo_class@183ec003]" started-at="2025-05-14T20:18:37 IST" name="getText" finished-at="2025-05-14T20:18:38 IST" depends-on-methods="Test_demo.Demo_class.browser" duration-ms="100" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Button text does not matches! expected [Book a Free Demosss] but found [Book a Free Demo]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Button text does not matches! expected [Book a Free Demosss] but found [Book a Free Demo]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at Test_demo.Demo_class.getText(Demo_class.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test_demo.Demo_class@183ec003]" started-at="2025-05-14T20:18:38 IST" name="tearDown" finished-at="2025-05-14T20:18:39 IST" duration-ms="1097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Test_demo.Demo_class -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
