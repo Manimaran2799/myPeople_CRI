@@ -1,0 +1,49 @@
+BaseClass:
+---------------------
+1.We can initiliaze which browser should get launch by using property file 2.Open Browser 3.Clearing cookies
+2.Getting URL and launch
+3.Closing the Browser
+
+Final BaseClass Flow
+
+1.Load config
+2.Initialize WebDriver (from config)
+3.Maximize window, clear cookies, set wait
+4.Launch URL
+5.After tests → quit browser
+6.Optional: Screenshot, logging, utilities
+
+💡 Easy way to remember:
+
+Config → Browser Setup → Window & Cookies → Launch URL → Tests → TearDown → Utilities
+Step 1: Create BaseClass
+
+In base package, create BaseClass.java
+This class will handle browser setup, URL launch, teardown, and common utilities
+
+Step 2: Add WebDriver & Properties
+Declare protected static WebDriver driver → child classes can use
+Declare Properties prop → read config like browser, URL
+
+Step 3:Load Config File
+Create config.properties in resources folder
+Load it in BaseClass so we can use browser, URL, credentials etc.
+
+1.Create FileInputStream Obj for tracking the path of the property folder
+2.Create object Property  methods 1.load(loading the path of the folder 2.getProp(for getting attributes for browser to be launch url)
+
+Step 4: Browser Initialization
+1.Read browser type from config file
+2.Initialize ChromeDriver / FirefoxDriver / EdgeDriver 
+
+Step 5: Browser Setup
+
+Maximize window
+Clear cookies
+Set implicit wait
+Launch URL
+
+Step 6: 
+Close the browser
+
+
