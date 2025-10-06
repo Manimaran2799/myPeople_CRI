@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testAcc.testCases">
+      <class name="Test.Test_Generic_Cus_inv">
         <methods>
-          <include name="intialization"/>
-          <include name="TestCase_008"/>
-          <include name="turnOFF"/>
+          <include name="shutDown"/>
+          <include name="TestCase_001"/>
+          <include name="KickStart"/>
         </methods>
-      </class> <!-- com.testAcc.testCases -->
+      </class> <!-- Test.Test_Generic_Cus_inv -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
